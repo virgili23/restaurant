@@ -1,0 +1,36 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "A restaurant app later to be named, it will use Node.js and express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "scss": "sass --watch scss/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virgili23/restaurant.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "virgili23",
+    "restaurant",
+    "portfolio",
+    "vbaez"
+  ],
+  "author": "Virgilio Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virgili23/restaurant/issues"
+  },
+  "homepage": "https://github.com/virgili23/restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
+    "sass": "^1.22.0"
+  }
+}

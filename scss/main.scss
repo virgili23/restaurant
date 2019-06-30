@@ -1,0 +1,315 @@
+// Variables
+
+$medula: 'Medula One';
+$lato: 'Lato';
+$quicksand: 'Quicksand';
+$font-normal: 1.4em;
+$font-big: 9em;
+$black: #333;
+$white: #f2f3f8;
+$orange :#E8910C;
+$shadow: 2px 2px 4px #000000;
+
+// Inheritance
+
+
+
+
+
+html {
+    margin: 0;
+}
+
+body {
+    font-family: $lato;
+    margin: 0;
+    // z-index: 0;
+}
+
+h1 {
+    font-family: $medula;
+    font-size: $font-big;
+    color: $white;
+    // opacity: 1;
+}
+h2 {
+    // margin-left: 40px;
+    font-family: $lato;
+    font-size: $font-normal;
+    color: $white;
+    // text-shadow: $shadow;
+}
+
+.button {
+    color: $white;
+    background: $black;
+    border: none;
+    font-size: $font-normal;
+    padding: 14px 40px;
+    border-radius: 12px;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+
+.landing {
+    height: 100vh;
+    // background-image: url("../images/background3.jpg");
+    background-image: url("../images/niceburger1.jpg");
+
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    // background-size: 100vw, 100vh;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+    .mask {
+        z-index: 0;
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        background: black;
+        opacity: 0.10;
+    }
+    .over-the-mask {
+        position: absolute;
+        z-index: 1;
+        // background: $black;  
+        width: 100%;
+        top: 28vh;
+        h1 {
+            text-align: center;
+        }    
+        h2 {
+            text-align: center;
+        }  
+
+    }
+
+    header {
+        position: relative;
+        padding: 1%;
+        text-align: center;
+        
+
+        .controller {
+            // background-color: blue;
+            width: 100%;
+            position: relative;
+
+            .navigation {
+                // background: purple;
+                position: relative;
+                width: 80%;
+                margin: auto;
+                padding: 1%;                
+
+
+                .index {
+                    position: relative;
+                    // background: yellow;
+                    display: inline-block;
+                    justify-content: space-around;
+                    padding: 14px 44px;
+
+                    a {
+                        // background: red;
+                        color: $white;
+                        opacity: 0.9;
+                        font-size: $font-normal;
+                        font-family: $lato;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                        opacity: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////
+
+.about {
+    padding: 5%;
+    // background: blue;
+    background: $white;
+    height: 80vh;
+    position: relative;
+
+    .about-content {
+        display: inline-block;
+
+        .about-img {
+            // background: green;
+            width: 40vw;
+            height: 65vh;
+            img {
+                // position: absolute;
+                margin-left: 10%;
+                margin-top: 8%;
+                width: 495px;
+                height: 330px;
+            }
+        }
+
+        .about-desc {
+            // background: yellow;
+            position: absolute;
+            right: 5%;
+            top: 25%;
+            width: 47vw;
+            height: 55vh;
+
+            h4 {
+                font-family: $quicksand;
+                text-align: center;
+                font-size: 3em;
+            }
+
+            p {
+                font-family: $lato;
+                color: $black;
+                margin: 5%;
+                font-size: 1.3em;
+                line-height: 1.5em;
+            }
+        }
+    }
+    
+}
+
+.menu-background {
+    background-image: url("../images/niceplate2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 40vh;
+    padding: 15vh 0;
+    overflow: hidden;
+    z-index: -1;
+    h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        span {
+            padding: 10px;
+            border: 5px solid $white;
+            border-radius: 2%;
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////
+
+.menu {
+
+    height: 100vh;
+    background-image: url("../images/menu-background.svg");
+
+    .menu-container {
+        position: relative;
+        // background: lightblue;
+        height: 90%;
+        width: 90%;
+        top: 3%;
+        margin: auto;
+
+        .menu-container-background {
+            position: relative;
+            // background: blue;
+            height: 90%;
+            width: 90%;
+            margin: auto;
+            top: 5%;
+
+            .main-item {
+                // background: green;
+                height: 33%;
+                width: 100%;
+                // display: flex;
+                // justify-content: space-between;
+
+                h5 {
+                    text-align: center;
+                    font-family: $medula;
+                    font-size: 2em;
+                }
+                .dish-container {
+                    // background: blue;
+                    display: flex;
+                    justify-content: space-between;
+                    .dish {
+                        width: 30%;
+                        display: inline-block;
+                        justify-content: space-between;
+                        // background: purple;
+                        .item-name {
+                            font-weight: 400;
+                            font-size: 1.3em;
+                        }
+                        .item-price {
+                            float: right;
+                            margin-right: 3%;
+                            font-size: 1.1em;
+    
+                        }
+                        .item-desc {
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////
+
+.call-to-action {
+    background: $orange;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    .cta-container {
+        position: relative;
+        // background: blue;
+        width: 90%;
+        height: 60%;
+        margin: auto;
+        top: 20%;
+        .cta-message {
+            // background: green;
+            width: 90%;
+            height: 70%;
+            margin: auto;
+
+            h1 {
+                text-shadow: 1px 0px $black;
+            }
+        }
+
+        .cta-buttons {
+            // background: orange;
+            width: 60%;
+            height: 30%;
+            margin: auto;
+        }
+    }
+}
+
+.bottom-footer {
+    // position: absolute;
+    bottom: 0;
+    // width: 100vw;
+    height: 30vh;
+    margin: 0;
+    background: $black;
+    background-size: cover;
+}

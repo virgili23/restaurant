@@ -1,0 +1,238 @@
+html {
+  margin: 0;
+}
+
+body {
+  font-family: "Lato";
+  margin: 0;
+}
+
+h1 {
+  font-family: "Medula One";
+  font-size: 9em;
+  color: #f2f3f8;
+}
+
+h2 {
+  font-family: "Lato";
+  font-size: 1.4em;
+  color: #f2f3f8;
+}
+
+.button {
+  color: #f2f3f8;
+  background: #333;
+  border: none;
+  font-size: 1.4em;
+  padding: 14px 40px;
+  border-radius: 12px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.landing {
+  height: 100vh;
+  background-image: url("../images/niceburger1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -1;
+}
+.landing .mask {
+  z-index: 0;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  background: black;
+  opacity: 0.1;
+}
+.landing .over-the-mask {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 28vh;
+}
+.landing .over-the-mask h1 {
+  text-align: center;
+}
+.landing .over-the-mask h2 {
+  text-align: center;
+}
+.landing header {
+  position: relative;
+  padding: 1%;
+  text-align: center;
+}
+.landing header .controller {
+  width: 100%;
+  position: relative;
+}
+.landing header .controller .navigation {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding: 1%;
+}
+.landing header .controller .navigation .index {
+  position: relative;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 14px 44px;
+}
+.landing header .controller .navigation .index a {
+  color: #f2f3f8;
+  opacity: 0.9;
+  font-size: 1.4em;
+  font-family: "Lato";
+}
+.landing header .controller .navigation .index a:hover {
+  text-decoration: none;
+  opacity: 1.5;
+}
+
+.about {
+  padding: 5%;
+  background: #f2f3f8;
+  height: 80vh;
+  position: relative;
+}
+.about .about-content {
+  display: inline-block;
+}
+.about .about-content .about-img {
+  width: 40vw;
+  height: 65vh;
+}
+.about .about-content .about-img img {
+  margin-left: 10%;
+  margin-top: 8%;
+  width: 495px;
+  height: 330px;
+}
+.about .about-content .about-desc {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  width: 47vw;
+  height: 55vh;
+}
+.about .about-content .about-desc h4 {
+  font-family: "Quicksand";
+  text-align: center;
+  font-size: 3em;
+}
+.about .about-content .about-desc p {
+  font-family: "Lato";
+  color: #333;
+  margin: 5%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.menu-background {
+  background-image: url("../images/niceplate2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15vh 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.menu-background h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu-background h1 span {
+  padding: 10px;
+  border: 5px solid #f2f3f8;
+  border-radius: 2%;
+}
+
+.menu {
+  height: 100vh;
+  background-image: url("../images/menu-background.svg");
+}
+.menu .menu-container {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  top: 3%;
+  margin: auto;
+}
+.menu .menu-container .menu-container-background {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  top: 5%;
+}
+.menu .menu-container .menu-container-background .main-item {
+  height: 33%;
+  width: 100%;
+}
+.menu .menu-container .menu-container-background .main-item h5 {
+  text-align: center;
+  font-family: "Medula One";
+  font-size: 2em;
+}
+.menu .menu-container .menu-container-background .main-item .dish-container {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu-container .menu-container-background .main-item .dish-container .dish {
+  width: 30%;
+  display: inline-block;
+  justify-content: space-between;
+}
+.menu .menu-container .menu-container-background .main-item .dish-container .dish .item-name {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.menu .menu-container .menu-container-background .main-item .dish-container .dish .item-price {
+  float: right;
+  margin-right: 3%;
+  font-size: 1.1em;
+}
+.menu .menu-container .menu-container-background .main-item .dish-container .dish .item-desc {
+  font-size: 1.1em;
+}
+
+.call-to-action {
+  background: #E8910C;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+.call-to-action .cta-container {
+  position: relative;
+  width: 90%;
+  height: 60%;
+  margin: auto;
+  top: 20%;
+}
+.call-to-action .cta-container .cta-message {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+.call-to-action .cta-container .cta-message h1 {
+  text-shadow: 1px 0px #333;
+}
+.call-to-action .cta-container .cta-buttons {
+  width: 60%;
+  height: 30%;
+  margin: auto;
+}
+
+.bottom-footer {
+  bottom: 0;
+  height: 30vh;
+  margin: 0;
+  background: #333;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
